@@ -1,0 +1,103 @@
+:root{
+    --dark-blue: hsl(260, 8%, 14%);
+    --dark-blue-reviews: hsl(217, 28%, 15%);
+    --dark-blue-testimonial: hsl(219, 30%, 18%);
+    --cyan: hsl(180, 66%, 49%);
+    --white: white;
+    --manate : hsl(218, 17%, 62%);
+    --languid-lavender: hsl(275, 18%, 79%);
+    --pale-pink: hsl(351, 47%, 88%);
+    --pale-purple-pantone:hsl(312, 91%, 96%);
+    --lavander-web:hsl(233, 100%, 94%);
+    --peacook-blue: hsl(195, 83%, 38%);
+
+}
+/*Nav*/
+.site-header a:hover{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.barra{
+    background-color: var(--dark-blue);
+    margin-bottom: 10%;
+}
+
+.barra a{
+    color: var(--manate);
+}
+
+/*aboutMe*/
+.AboutMe{
+    padding-top: 3%;
+}
+
+.infoYo{
+    color: var(--manate);
+    font-size: 27px;
+    border-radius: 15%;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    background: var(--lavander-web) url(./Images/IMG_2468.JPG);
+    background-repeat: repeat no-repeat;
+    overflow: hidden;
+    margin-top: 20px;
+    padding-top: 250px;
+}
+
+.fotoYo{
+    width:250px;
+    height:250px;
+    border-radius:200px;
+    object-fit: cover;
+    border: var(--white) solid 10px;
+}
+
+/*Experiencia Laboral*/
+.expLab{
+    padding-left: 20%;
+}
+
+.expLab img{
+    width: 60%;
+    height: 60%;
+    align-items: center;
+}
+
+.boton{
+    background-color: var(--peacook-blue);
+}
+
+/*Conocimientos*/
+.conocimiento{
+    display: flex;
+    align-items: baseline;
+}
+
+.conocimiento hr{
+    padding-top: 50px;
+}
+
+.conocimientoAdic img{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+}
+
+/*Footer*/
+.img-pie{
+    width: 35px;
+    height: 35px;
+    margin: 8px;
+}
+
+.float-rigth{
+    float: right !important;
+}
+
+.Jumbotron{
+    background-image: url(./Images/undraw_design_components_9vy6.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
