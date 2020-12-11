@@ -27,22 +27,22 @@
 
 <body>
     <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container boxSec">
+        <div class="collapse bg-dark fixed-top" id="navbarHeader">
+            <div class="container">
               <div class="row">
-                <div class="col-sm-4 offset-md-1 py-4">
+                <div class="col-sm-4 offset-md-1 py-4 boxSec">
                   <h4 class="text-white">Secciones</h4>
                   <ul class="list-unstyled">
                     <li><a href="./servicios.html" class="text-white">Servicios</a></li>
-                    <li><a href="#" class="text-white">Experiencia Laboral</a></li>
-                    <li><a href="#" class="text-white">Conocimientos</a></li>
-                    <li><a href="#" class="text-white">Acerca de mi</a></li>
+                    <li><a href="#ExpLab" class="text-white">Experiencia Laboral</a></li>
+                    <li><a href="#Estudios" class="text-white">Conocimientos</a></li>
+                    <li><a href="#aboutme" class="text-white">Acerca de mi</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="navbar navbar-dark bg-dark shadow-sm fixed-top">
             <div class="container d-flex justify-content-between">
               <a href="#" class="navbar-brand d-flex align-items-center Name">Emi Suarez</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,7 +53,7 @@
     </header>
     <main>
         <!--tarjeta presentacion-->
-        <section class="AboutMe">
+        <section id="aboutme" class="AboutMe">
             <div class="container-fluid d-flex justify-content-center">
                 <div class="col col-sm-12 col-md-12 col-lg-6">
                     <div>
@@ -61,7 +61,7 @@
                             <div class="boxHeader">
                             </div>
                             <div class="boxContent">
-                                <img src="./Images/Yo.jpeg" class="fotoYo" />
+                                <img src="./Images/Yo.jpg" class="fotoYo" />
                                 <div class="boxInfo">
                                     <h1>Emilio Suarez
                                         <span>27</span><br>
@@ -75,9 +75,9 @@
             </div>
         </section>
         <!--Experiencia laboral-->
-        <section class="expLab">
+        <section id="ExpLab" class="expLab">
             <h2>Experiencia Laboral</h2>
-            <div class="container-fluid market animate__fadeInRightBig wow" data-wow-duration="4s">
+            <div class="container-fluid market animate__fadeInRightBig wow" data-wow-duration="2s">
                 <div class="row d-flex justify-content-between">
                     <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 boxExpLab">
                         <img src="./Images/trabajo1.svg">
@@ -85,7 +85,7 @@
                             Fanafesa
                         </h2>
                         <p>
-                            <ul class="list-unstyled">
+                            <ul>
                                 <li>Soporte a la herramienta HCM</li>
                                 <li>Levantamiento de Service Request</li>
                                 <li>Accesos y roles a usuarios</li>
@@ -106,7 +106,7 @@
                             Versaria
                         </h2>
                         <p>
-                            <ul class="list-unstyled">
+                            <ul>
                                 <li>Monitorizar ejecucion de JOBS</li>
                                 <li>Revision de documentacion DB2 para realizar soporte</li>
                                 <li>Migracion de version SQL SERVER</li>
@@ -128,7 +128,7 @@
                             Ateb
                         </h2>
                         <p>
-                            <ul class="list-unstyled">
+                            <ul>
                                 <li>Implementación del software Cofidi</li>
                                 <li>Diseño de base de datos para solución al usuario</li>
                                 <li>Migración de información de versión del SQL SERVER</li>
@@ -147,7 +147,7 @@
             </div>
         </section>
         <!--Otros estudios-->
-        <section class="conocimiento">
+        <section id="Estudios" class="conocimiento">
             <h2>Conocimientos</h2>
             <div class="container">
                 <div class="row featurette">
@@ -252,13 +252,13 @@
 
                 <ul class="sci">
                     <li>
-                        <a href="#">facebook</a>
+                        <a href="Facebook.com"><img src="./Images/facebook.png" alt="Facebook"></a>
                     </li>
                     <li>
-                        <a href="#">Twitter</a>
+                        <a href="#"><img src="./Images/instagram.png" alt="Facebook"></a>
                     </li>
                     <li>
-                        <a href="#">Linkendin</a>
+                        <a href="#"><img src="./Images/LinkedIn.png" alt="Facebook"></a>
                     </li>
                 </ul>
             </div>
@@ -282,10 +282,12 @@
                     </li>
                     <li>
                         <span></span>
+                        <!--span><img src="./Images/tel.png" alt=""></span-->
                         <p><a href="tel:5512572452">5512572452</a></p>
                     </li>
                     <li>
                         <span></span>
+                        <!--span><img src="./Images/mail.ico" alt=""></span-->
                         <p><a href="mailito:esuarez_ipn@hotmail.com">esuarez_ipn@hotmail.com</a></p>
                     </li>
                 </ul>

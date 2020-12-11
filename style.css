@@ -19,9 +19,20 @@
     font-size: 1.8rem;
     font-weight: bold;
 }
+
+.boxSec{
+    margin: 20px 0;
+}
+
+.boxSec h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .boxSec a:hover{
     color: #f00;
     text-decoration: none;
+
 }
 
 /*aboutMe*/
@@ -86,6 +97,11 @@
     color: white;
 }
 
+.boxExpLab ul{
+    margin: 20px 0;
+
+}
+
 .expLab h2{
     text-align: center;
     font-size: 1.8rem;
@@ -96,6 +112,7 @@
     width: 60%;
     height: 60%;
     align-items: center;
+    padding-top: 20px;
 }
 
 .boton{
@@ -225,6 +242,9 @@ footer p{
 .sci{
     margin-top: 20px;
     display: flex;
+}
+.sci img{
+    width:40px;
 }
 
 .sci li{
