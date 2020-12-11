@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
 :root{
     --dark-blue: hsl(260, 8%, 14%);
     --dark-blue-reviews: hsl(217, 28%, 15%);
@@ -13,49 +15,81 @@
 
 }
 /*Nav*/
-.site-header a:hover{
-    color: var(--white);
+.Name{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.boxSec a:hover{
+    color: #f00;
     text-decoration: none;
-}
-
-.barra{
-    background-color: var(--dark-blue);
-    margin-bottom: 10%;
-}
-
-.barra a{
-    color: var(--manate);
 }
 
 /*aboutMe*/
 .AboutMe{
-    padding-top: 3%;
+    padding: 130px 30px 30px;
 }
 
 .infoYo{
-    color: var(--manate);
+    color: white;
     font-size: 27px;
-    border-radius: 15%;
-    font-family: 'Architects Daughter', cursive;
+    border-radius: 5%;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    background: var(--lavander-web) url(./Images/IMG_2468.JPG);
-    background-repeat: repeat no-repeat;
+    background: #023e8a;
+    height: auto;
     overflow: hidden;
-    margin-top: 20px;
-    padding-top: 250px;
+}
+
+.boxHeader{
+    height: 250px;
+    width: 100%;
+    background: var(--lavander-web) url(./Images/geek.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxContent{
+    width: 100%;
+    height: 250px;
 }
 
 .fotoYo{
-    width:250px;
-    height:250px;
+    width:200px;
+    height:200px;
     border-radius:200px;
     object-fit: cover;
-    border: var(--white) solid 10px;
+    border: var(--white) solid 5px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -100px;
+}
+
+.boxInfo{
+    padding: 15px;
+    position: relative;
+    top: -100px;
 }
 
 /*Experiencia Laboral*/
 .expLab{
-    padding-left: 20%;
+    padding: 100px 30px;
+    background-color: #023047;
+}
+
+.boxExpLab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.expLab h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #48cae4;
 }
 
 .expLab img{
@@ -65,39 +99,213 @@
 }
 
 .boton{
-    background-color: var(--peacook-blue);
+    background-color: #ffb703;
+    border-radius: 20px;
+    transition: all ease .30s;
+
+}
+
+.boton:hover{
+    transform: scale(1.2);
 }
 
 /*Conocimientos*/
 .conocimiento{
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    padding: 60px 30px;
 }
 
-.conocimiento hr{
-    padding-top: 50px;
+.conocimiento h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8rem;
 }
 
-.conocimientoAdic img{
-    height: 50%;
-    width: 50%;
+.conocimiento h2 span{
+    color: #48cae4;   
+}
+
+.conocimiento .boxContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.conocimiento .boxImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+.conocimiento .boxImg img{
+   width: 70%;
+   
+}
+
+.conocimientoAdic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.conocimientoAdic img{
+    height: 70%;
+    width: 70%;
+}
+
+.conocimientoAdic h3{
+    color: #48cae4;   
+}
+
+.conocimientoAdic p{
+    font-weight: bold;
+}
+
 /*Footer*/
-.img-pie{
-    width: 35px;
-    height: 35px;
-    margin: 8px;
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.float-rigth{
-    float: right !important;
+footer .boxAbout{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.Jumbotron{
-    background-image: url(./Images/undraw_design_components_9vy6.svg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
+footer .boxAbout .sec{
+    margin-right: 30px;
+}
+
+footer .boxAbout .sec.aboutMe{
+    width: 40%;
+}
+
+footer .boxAbout h2{
+    position: relative;
+    color: wheat;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .boxAbout span{
+    color: #f00;
+    font-weight: bold;
+}
+
+footer .boxAbout h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer p{
+    color: #999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;/*este color se debe cambiar cuando se tengan iconos*/
+}
+
+.sci li a:hover{
+    background: #f00;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li a{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+
+.Contacto{
+    width: calc(35% - 60px); /*Operacion para calclar el ancho de las 3 columnas(QuickLinks-.container .sec)*/
+    margin-right: 0 !important;
+}
+
+.Contacto .info{
+    position: relative;
+}
+
+.Contacto .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.Contacto .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.Contacto .info li span{
+    color: #999;
+}
+
+.Contacto .info li a{
+    color: #999;
+    text-decoration: none;
+}
+
+.Contacto .info li a:hover{
+    color: #fff;
+}
+
+.copyrigthText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
 }

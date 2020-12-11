@@ -14,75 +14,130 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <!--ESTILOS animated-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--ESTILOS MINE-->
     <link rel="stylesheet" href="./style.css">
+    <script src="./wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./main.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="site-header navbar-expand-md navbar-dark fixed-top bg-dark barra">
-            <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <a class="py-2" href="#">Emi Suarez</a>
-                <a class="py-2 d-none d-md-inline-block" href="./servicios.html">Servicios</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Contactame</a>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container boxSec">
+              <div class="row">
+                <div class="col-sm-4 offset-md-1 py-4">
+                  <h4 class="text-white">Secciones</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="./servicios.html" class="text-white">Servicios</a></li>
+                    <li><a href="#" class="text-white">Experiencia Laboral</a></li>
+                    <li><a href="#" class="text-white">Conocimientos</a></li>
+                    <li><a href="#" class="text-white">Acerca de mi</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </nav>
+          </div>
+          <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="navbar-brand d-flex align-items-center Name">Emi Suarez</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
     </header>
     <main>
         <!--tarjeta presentacion-->
         <section class="AboutMe">
             <div class="container-fluid d-flex justify-content-center">
                 <div class="col col-sm-12 col-md-12 col-lg-6">
-                    <div>   
-                        <div class="infoYo align-self-end">
-                            <div class="Espacio"></div>
-                            <img src="./Images/Yo.jpeg" class="fotoYo" />
-                            <h1>Emilio Suarez
-                                <span class="js-counter h2 text-primary" data-value="27">27</span>
-                            </h1>
-                            <span>CDMX</span>
+                    <div>
+                        <div class="infoYo">
+                            <div class="boxHeader">
+                            </div>
+                            <div class="boxContent">
+                                <img src="./Images/Yo.jpeg" class="fotoYo" />
+                                <div class="boxInfo">
+                                    <h1>Emilio Suarez
+                                        <span>27</span><br>
+                                        <span>CDMX</span>
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Experiencia laboral-->
-        <hr class="featurette-divider">
         <section class="expLab">
-            <div class="container-fluid market">
+            <h2>Experiencia Laboral</h2>
+            <div class="container-fluid market animate__fadeInRightBig wow" data-wow-duration="4s">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 aos-init aos-animate" data-aos="fade-up">
+                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 boxExpLab">
                         <img src="./Images/trabajo1.svg">
                         <h2>
                             Fanafesa
                         </h2>
                         <p>
-                            aqui van las actividades
+                            <ul class="list-unstyled">
+                                <li>Soporte a la herramienta HCM</li>
+                                <li>Levantamiento de Service Request</li>
+                                <li>Accesos y roles a usuarios</li>
+                                <li>Actualización informacion a tablas mediante un layout de carga</li>
+                                <li>Reportes en OTBI</li>
+                                <li>Conultas PL/SQL</li>
+                                <li>Configuracion de modulos de la plataforma</li>
+                                <li>Analisis de requerimientos y plan de trabajo</li>
+                              </ul>
                         </p>
                         <p>
                             <a class="btn btn-sencondary boton" href="#" role="button">Ver Detalle</a>
                         </p>
                     </div>
-                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 boxExpLab">
                         <img src="./Images/trabajo2.svg">
                         <h2>
                             Versaria
                         </h2>
                         <p>
-                            aqui van las actividades
+                            <ul class="list-unstyled">
+                                <li>Monitorizar ejecucion de JOBS</li>
+                                <li>Revision de documentacion DB2 para realizar soporte</li>
+                                <li>Migracion de version SQL SERVER</li>
+                                <li>Monitorizar memoria del servidor donde esta alojada Base de Datos</li>
+                                <li>Liberaion de bloqueos por ejecucion de JOBSde SQL SERVER</li>
+                                <li>Respaldo de base de datos</li>
+                                <li>Planificacion de capacidad</li>
+                                <li>Programación en COBOLen framework BETA91</li>
+                                <li>Generación de reportes</li>
+                              </ul>
                         </p>
                         <p>
                             <a class="btn btn-sencondary boton" href="#" role="button">Ver Detalle</a>
                         </p>
                     </div>
-                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/trabajo1.svg">
+                    <div class="col-sm-6 col-lg-4 px-2 px-lg-3 mb-3 mb-lg-0 boxExpLab">
+                        <img src="./Images/trabajo3.svg">
                         <h2>
                             Ateb
                         </h2>
                         <p>
-                            aqui van las actividades
+                            <ul class="list-unstyled">
+                                <li>Implementación del software Cofidi</li>
+                                <li>Diseño de base de datos para solución al usuario</li>
+                                <li>Migración de información de versión del SQL SERVER</li>
+                                <li>Modificación de Store Procedure</li>
+                                <li>Análisis de requerimientos y plan de trabajo</li>
+                                <li>Diseño de comunicación entre software y archivos de carga</li>
+                                <li>Tester</li>
+
+                            </ul>
                         </p>
                         <p>
                             <a class="btn btn-sencondary boton" href="#" role="button">Ver Detalle</a>
@@ -92,13 +147,13 @@
             </div>
         </section>
         <!--Otros estudios-->
-        <hr class="featurette-divider">
         <section class="conocimiento">
+            <h2>Conocimientos</h2>
             <div class="container">
-                <div class="row featurette contenido">
-                    <div class="col-md-7">
+                <div class="row featurette">
+                    <div class="col-md-6 boxContent">
                         <h2 class="featurette-heading"> Diplomado
-                            <span class="text-muted">
+                            <span>
                                 Programación en R
                             </span>
                         </h2>
@@ -106,16 +161,16 @@
                             Obtuve mi diploma al cursar la materia de lenguaje de programación en R en Dev.F
                         </p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6 boxImg">
                         <img src="./Images/R.svg"
                             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                     </div>
                     <hr class="featurette-divider">
                     <div class="row featurette">
-                        <div class="col-md-7 order-md-2">
+                        <div class="col-md-6 order-md-2 boxContent">
                             <h2 class="featurette-heading"> Diplomado
-                                <span class="text-muted">
+                                <span>
                                     Programación en Diseño Web Jr
                                 </span>
                             </h2>
@@ -125,53 +180,56 @@
                                 Dev.F
                             </p>
                         </div>
-                        <div class="col-md-5 order-md-1">
+                        <div class="col-md-6 order-md-1 boxImg">
                             <img src="./Images/html.svg"
                                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                                width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false"
-                                role="img">
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         </div>
                     </div>
                     <hr class="featurette-divider">
                     <div class="row featurette">
-                        <div class="col-md-7">
+                        <div class="col-md-6 boxContent">
                             <h2 class="featurette-heading">Diplomado
-                                <span class="text-muted">SQL Avanzado</span>
+                                <span>SQL Avanzado</span>
                             </h2>
                             <p class="lead">
                                 Obtuve mi diploma al cursar la materia de SQL Avanzado en
                                 IMECAF
                             </p>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6 boxImg">
                             <img src="./Images/sql.svg"
                                 class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                                width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false"
-                                role="img">
+                                preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                         </div>
                     </div>
-                    <div class="container-fluid">
-                        <div class="row d-flex justify-content-around conocimientoAdic">
-                            <div class="col-lg-3">
-                                <img src="./Images/Language.svg">
-                                <h3>
-                                    Ingles
-                                </h3>
-                                <p>
-                                    INTERMEDIO
-                                </p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="./Images/Analysis.svg">
-                                <h3>
-                                    Análisis de Requerimientos
-                                </h3>
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="./Images/programming.svg">
-                                <h3>
-                                    Programación - PHP/C
-                                </h3>
+                    <div class="conocimientoAdic animate__rotateInUpRight wow" data-wow-duration="1s">
+                        <div class="container-fluid">
+                            <div class="row d-flex justify-content-around">
+                                <div class="col-lg-3">
+                                    <img src="./Images/Language.svg">
+                                    <h3>
+                                        Ingles
+                                    </h3>
+                                    <p>
+                                        INTERMEDIO
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <img src="./Images/Analysis.svg">
+                                    <h3>
+                                        Análisis de Requerimientos
+                                    </h3>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img src="./Images/programming.svg">
+                                    <h3>
+                                        Programación
+                                    </h3>
+                                    <p>
+                                        PHP/C
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -180,22 +238,63 @@
         </section>
     </main>
     <!--footer-->
-    <section>
-        <footer class="container redes">
-            <p class="float-rigth">
-                <a href="#">
-                    Regresar al inicio
-                </a>
-            </p>
-            <p>© 2017-2020 Company, Inc. ·</p>
-            <div class="d-flex justify-content-center">
-            <a href="http://facebook.com" target="_BLANK"> <img src="./Images/facebook.png" class="img-pie" /></a>
-            <a href="https://www.instagram.com/" target="_BLANK"><img src="./Images/instagram.png"
-                    class="img-pie" /></a>
-            <a href="https://www.linkedin.com/" target="_BLANK"><img src="./Images/linkedin.png" class="img-pie" /></a>
+    <footer>
+        <div class="boxAbout">
+            <div class="sec aboutMe">
+                <h2>Acerca de mi</h2>
+                <p><span>DB y Programador </span>con 4 años de
+                    experiencia en el manejo de base de datos
+                    y programación, optimización de
+                    procesos. Leal, honesto y gusto por la
+                    investigación de temas desconocidos;
+                    compartir el conocimiento y actualizarme
+                    en temas.</p>
+
+                <ul class="sci">
+                    <li>
+                        <a href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Linkendin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Accesos Rapidos</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms &Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec Contacto">
+                <h2>Contacto</h2>
+                <ul class="info">
+                    <li>
+                        <span></span>
+                        <span>ORIENTE 247a NUM 192 CUCHILLA DEL MORAL</span>
+                    </li>
+                    <li>
+                        <span></span>
+                        <p><a href="tel:5512572452">5512572452</a></p>
+                    </li>
+                    <li>
+                        <span></span>
+                        <p><a href="mailito:esuarez_ipn@hotmail.com">esuarez_ipn@hotmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </footer>
-    </section>
+    </footer>
+    <div class="copyrigthText">
+        <p>© 2020 Company, Inc.</p>
+    </div>
 </body>
 
 </html>
